@@ -1,0 +1,182 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Animated Log in Page</title>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        .background{
+            display: flex;
+            flex-wrap: wrap;
+            flex-direction: row;
+            background-color: black;
+            height: 100vh;
+            width: 100vw;
+            /* z-index: 0; */
+            position: absolute;
+        }
+        .box{
+            background: black;
+            border: 1px solid #ea89c5;
+            height: 20vh;
+            width: 10vw;
+            z-index: 1;
+            /* position: absolute; */
+            transition: 1s;
+        }
+        div:hover{
+            background: #402034;
+            transition: 0s;
+        }
+        .logIn{
+            position: absolute;
+            background-color: rgb(2, 2, 2);
+            height: 500px;
+            width: 500px;
+            z-index: 2;
+            border-radius: 20px;
+            box-shadow: 0 1px 8px rgb(251, 249, 249);
+            left: 30%;
+            top: 10%;
+            display: flex;
+            justify-content: center;
+            flex-wrap: wrap; 
+        }
+        h1{
+            color: white;
+            font-family: Arial, Helvetica, sans-serif;
+            font-weight: lighter;
+            margin-top: 30px;
+            font-size: 40px;
+            height: 40px;
+            display: block;
+            width: 100%;
+            text-align: center;
+            margin-bottom: 24px;
+        }
+        span{
+            letter-spacing: 2px;
+            font-size: 16px;
+            color: white;
+            font-family: Arial, Helvetica, sans-serif;
+            font-weight: lighter;
+            text-transform: uppercase;
+            padding-bottom: 0;
+            display: inline;
+            height: 20px;
+            width: 100%;
+            padding-left: 18px;
+            position: relative;
+            /* top: -8px; */
+        }
+        input{
+            height: 50px;
+            width: 400px;
+            border-radius: 20px;
+            border: none;
+            top: -30px;
+            position: relative;
+            font-size: 14px;
+            padding-left: 4px;
+        }
+        #password{
+            top: -30px;
+        }
+        .password{
+            top: -60px;
+        }
+        button{
+            display: block;
+            margin-top: 0px;
+            height:50px;
+            width: 350px;
+            border-radius: 30px;
+            background-color: #402034;
+            color: white;
+            font-family: Arial, Helvetica, sans-serif;
+            text-align: center;
+            border: none;
+            font-size: 20px;
+            font-weight: bolder;
+            position: relative;
+            top: -20px;
+            cursor: pointer;
+        }
+        input:hover{
+            border: 2px solid #402034;
+            box-shadow: 0 2px 8px #ea89c5;
+        }
+        button:hover{
+            background-color: #ea89c5;
+            color: black;
+        }
+    </style>
+</head>
+<body>
+    <div class="background">
+        <div class="box"></div>
+        <div class="box"></div>
+        <div class="box"></div>
+        <div class="box"></div>
+        <div class="box"></div>
+        <div class="box"></div>
+        <div class="box"></div>
+        <div class="box"></div>
+        <div class="box"></div>
+        <div class="box"></div>
+        <div class="box"></div>
+        <div class="box"></div>
+        <div class="box"></div>
+        <div class="box"></div>
+        <div class="box"></div>
+        <div class="box"></div>
+        <div class="box"></div>
+        <div class="box"></div>
+        <div class="box"></div>
+        <div class="box"></div>
+        <div class="box"></div>
+        <div class="box"></div>
+        <div class="box"></div>
+        <div class="box"></div>
+        <div class="box"></div>
+        <div class="box"></div>
+        <div class="box"></div>
+        <div class="box"></div>
+        <div class="box"></div>
+        <div class="box"></div>
+        <div class="box"></div>
+        <div class="box"></div>
+        <div class="box"></div>
+        <div class="box"></div>
+        <div class="box"></div>
+        <div class="box"></div>
+        <div class="box"></div>
+        <div class="box"></div>
+        <div class="box"></div>
+        <div class="box"></div>
+        <div class="box"></div>
+        <div class="box"></div>
+        <div class="box"></div>
+        <div class="box"></div>
+        <div class="box"></div>
+        <div class="box"></div>
+        <div class="box"></div>
+        <div class="box"></div>
+        <div class="box"></div>
+        <div class="box"></div>
+    </div>
+    <form class="logIn">
+        <h1>LOG IN</h1><br>
+        <span>Username</span>
+        <input type="text" placeholder="Enter Username"><br>
+        <span id="password">Password</span>
+        <input type="password" placeholder="Password" class="password">
+        <button type="submit">Log in</button>
+    </form>
+</body>
+</html>

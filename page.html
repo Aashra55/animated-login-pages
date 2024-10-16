@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login Page</title>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        body{
+            background-color: #000000;
+        }
+        div{
+            height: 550px;
+            width: 500px;
+            border-radius: 10%;
+            background: transparent;
+            position: absolute;
+            left: 50%;
+            top: 50%;
+            transform: translate(-50%,-50%);
+            box-shadow: 0 0 20px 20px rgb(183, 12, 12);
+            animation: change 10s infinite ease-in-out;
+        }
+        @keyframes change{
+            0%{
+                box-shadow: 0 0 20px 20px rgb(183, 12, 12);
+            }
+            20%{
+                box-shadow: 0 0 20px 20px rgb(183, 12, 12);
+            }
+            25%{
+                box-shadow: 0 0 20px 20px rgb(65, 173, 7);
+            }
+            45%{
+                box-shadow: 0 0 20px 20px rgb(65, 173, 7);
+            }
+            50%{
+                box-shadow: 0 0 20px 20px rgb(19, 24, 173);
+            }
+            70%{
+                box-shadow: 0 0 20px 20px rgb(19, 24, 173);
+            }
+            75%{
+                box-shadow: 0 0 20px 20px rgb(173, 19, 142);
+            }
+            95%{
+                box-shadow: 0 0 20px 20px rgb(173, 19, 142);
+            }
+            100%{
+                box-shadow: 0 0 20px 20px rgb(183, 12, 12);
+            }
+        }
+        form{
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            height: 100%;
+            color: #fff;
+            font-family: "Poppins",system-ui;
+        }
+        h1{
+            font-weight: 500;
+            font-size: 40px;
+        }
+        h2{
+            font-weight: 100;
+            font-size: 45px;
+        }
+        input{
+            margin: 10px 0;
+            background: transparent;
+            height: 50px;
+            width: 80%;
+            border-radius: 20px;
+            border: 2px solid #fff;
+            padding-left: 10px;
+            letter-spacing: 2px;
+            font-size: 14px;
+            color: #fff;
+        }
+        button{
+            margin: 20px 0;
+            background-color: rgb(183, 12, 12);
+            animation: bgcolor 10s infinite ease-in-out;
+            border-radius: 40px;
+            height: 50px;
+            width: 40%;
+            border: none;
+            color: #fff;
+            font-family: "Poppins",system-ui;
+            font-size: 22px;
+            cursor: pointer;
+        }
+        @keyframes bgcolor{
+            0%{
+                background-color:  rgb(183, 12, 12);
+            }
+            20%{
+                background-color:  rgb(183, 12, 12);
+            }
+            25%{
+                background-color:  rgb(65, 173, 7);
+            }
+            45%{
+                background-color:  rgb(65, 173, 7);
+            }
+            50%{
+                background-color:  rgb(19, 24, 173);
+            }
+            70%{
+                background-color:  rgb(19, 24, 173);
+            }
+            75%{
+                background-color:  rgb(173, 19, 142);
+            }
+            95%{
+                background-color:  rgb(173, 19, 142);
+            }
+            100%{
+                background-color:  rgb(183, 12, 12);
+            }
+        }
+    </style>
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">    
+</head>
+<body>
+    <div>
+        <form action="">
+            <h2>WELCOME BACK!</h2>
+            <h1>LOG IN</h1>
+            <input type="text" placeholder="USERNAME">
+            <input type="password" placeholder="PASSWORD">
+            <button>LOG IN</button>
+        </form>
+    </div>
+</body>
+</html>
